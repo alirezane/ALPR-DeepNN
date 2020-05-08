@@ -16,4 +16,8 @@ evaluate.py : The trained model can be evaluated by running this code.
 predict.py : any new data can be made predictions on by this code under some circumstances. First, if the trained model is trained in 'OCR'  or 'Hybrid' mode since it containes non-convolutional layers, it accepts fixed sized images as input. Otherwise for Locating phase any image with any size can be given to model as input. 
 ### Results
 In the evaluation phase, if the confidences calculated in the annomaly detection phase, for a digit is colored in green, it means that it has passed the confidence threshold for that specific class in that specific digit location, otherwise it will be colored in red indicating that the model is not confident enough in prediction that digit. Confidence being green for all the digits shows that the model confidently predicted the whole license plate.
+### OCR:
 ![Image of Yaktocat](plate.png)
+### Detection:
+![Image of Yaktocat](plate-detection.png)
+![Image of Yaktocat](plate-detection-heatmap.png)
